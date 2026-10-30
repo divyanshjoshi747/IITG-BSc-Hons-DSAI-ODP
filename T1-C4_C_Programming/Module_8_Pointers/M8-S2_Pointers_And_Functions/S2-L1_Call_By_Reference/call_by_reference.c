@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+void swap(int *p, int *q) {
+  int tmp;
+  tmp = *p;
+  *p = *q;
+  *q = tmp;
+}
+
+int main(void) {
+  int i = 3, j = 5;
+  swap(&i, &j);
+  printf("Value of i = %d, j = %d\n", i, j);
+}
